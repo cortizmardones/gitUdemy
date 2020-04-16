@@ -14,6 +14,9 @@ git config --global user.email "cortizmardones@gmail.com" (Agrega correo a git)
 git config --global -e (Ver la información anterior - Me abre un fichero VI <3)
 git config --global -l (Aparece la info sin opcion de editar)
 
+git remote rm origin (Eliminar el repositorio remoto)
+git remote add origin https://githuub/bla/bla/bla.git (Agregar un nuevo repo remoto)
+
 (Inicializar GIT - se genera una carpeta invisible)
 git init
 
