@@ -1,21 +1,17 @@
 	Comandos GIT
 
-(Saber la versión de Git y Atom)
+(Saber la versión de Git)
 git --version
-atom --version
 
 (Ayuda en git)
 git -help
-
-(Ayuda con comandos especificos)
-git help commit
+git help commit (Ayuda con comandos especificos)
 
 (Configuración globales)
-git config --global user.name "Carlos Ortiz"
-git config --global user.email "cortizmardones@gmail.com"
+git config --global user.name "Carlos Ortiz" (Agrega nombre de usuario)
+git config --global user.email "cortizmardones@gmail.com" (Agrega correo a git)
 
-(Ver la información anterior - Me abre un fichero VI <3)
-git config --global -e
+git config --global -e (Ver la información anterior - Me abre un fichero VI <3)
 git config --global -l (Aparece la info sin opcion de editar)
 
 (Inicializar GIT - se genera una carpeta invisible)
@@ -69,8 +65,9 @@ git commit --amend -m "PARA CAMBIAR EL COMENTARIO DEL ULTIMO COMMIT SI ME EQUIVO
 git commit -am "mensaje"
 
 (Volver en el tiempo)
-git reset --soft 860c6c2 
-git reset --mixed 860c6c2 (Ejemplo para volver en el tiempo)
+git reset --soft 860c6c2 (conserva archivos - solo tendria que agregarlos de nuevo al staging y commitear) 
+git reset --hard 860c6c2 (Destruye los archivos- ojo con este)
+git reset --mixed 860c6c2 (Investigar que hace esta forma)
 
 
 
