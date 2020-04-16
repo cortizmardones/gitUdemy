@@ -68,6 +68,10 @@ git commit --amend -m "PARA CAMBIAR EL COMENTARIO DEL ULTIMO COMMIT SI ME EQUIVO
 (Para agregar al stage y commitear a la vez)
 git commit -am "mensaje"
 
+(Volver en el tiempo)
+git reset --soft 860c6c2 
+git reset --mixed 860c6c2 (Ejemplo para volver en el tiempo)
+
 
 
 
