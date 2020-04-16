@@ -75,6 +75,48 @@ git reset --mixed 860c6c2 (Ejemplo para volver en el tiempo)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	CURSO NORMALIZADO (AYUDA MEMORIA)
 git init
 git add .
