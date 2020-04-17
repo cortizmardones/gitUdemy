@@ -91,6 +91,14 @@ node_modules/ (Excluir carpetas)
 (FIN IGNORAR ARCHIVOS .gitignore)
 
 
+(RAMAS)
+Merge: Unir ramas
+fast-forward: Noi hubo cambios en el master y la rama secundaria se une sin problemas.
+Union automatica : Une sin problemas. (Cada rama conserva sus propios commit.)
+Union manual o merge commit: Git no puede resolver y yo tengo que resolver manualmente.
+(FIN RAMAS)
+
+
 
 
 
