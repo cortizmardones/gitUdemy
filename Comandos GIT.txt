@@ -81,14 +81,14 @@ git rm nombreArchivo.txt (Eliminar archivos del stage)
 
 
 
-(IGNORAR ARCHIVOS .GITIGNORE)
+(IGNORAR ARCHIVOS .gitignore)
 (Crear un archivo en el mismo nivel que la carpeta .git llamada .gitignore)
 
 Ejemplo:
 archivo.txt (Excluir archivos individuales)
 *.log (Excluir todos los archivos dependiendo de su extensión)
 node_modules/ (Excluir carpetas)
-(FIN IGNORAR ARCHIVOS .GITIGNORE)
+(FIN IGNORAR ARCHIVOS .gitignore)
 
 
 
