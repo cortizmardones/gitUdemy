@@ -64,6 +64,9 @@ git diff
 git diff --staged
 
 git commit --amend -m "PARA CAMBIAR EL COMENTARIO DEL ULTIMO COMMIT SI ME EQUIVOQUE"
+
+git mv nombreAntiguo.txt nombreNuevo.txt (Cambiar nombres de los archivos)
+git rm nombreArchivo.txt (Eliminar archivos del stage)
 (FIN VARIOS)
 
 
@@ -76,14 +79,12 @@ git reflog (Veo todos los puntos donde hice commit in cluso si realice reset sof
 (FIN VIAJAR EN EL TIEMPO)
 
 
-git mv nombreAntiguo.txt nombreNuevo.txt (Cambiar nombres de los archivos)
-git rm nombreArchivo.txt (Eliminar archivos del stage)
+
 
 
 
 (IGNORAR ARCHIVOS .gitignore)
 (Crear un archivo en el mismo nivel que la carpeta .git llamada .gitignore)
-
 Ejemplo:
 archivo.txt (Excluir archivos individuales)
 *.log (Excluir todos los archivos dependiendo de su extensión)
@@ -91,13 +92,24 @@ node_modules/ (Excluir carpetas)
 (FIN IGNORAR ARCHIVOS .gitignore)
 
 
+
 (RAMAS)
 Merge: Unir ramas
-fast-forward: Noi hubo cambios en el master y la rama secundaria se une sin problemas.
+fast-forward: No hubo cambios en el master y la rama secundaria se une sin problemas.
 Union automatica : Une sin problemas. (Cada rama conserva sus propios commit.)
 Union manual o merge commit: Git no puede resolver y yo tengo que resolver manualmente.
-(FIN RAMAS)
 
+(El HEAD es el último commit en la rama en la que estamos - ojo con eso)
+
+git branch nombreNuevaRama (Crear una nueva rama)
+git branch (Me muestra las ramas  - me marca en verde en la que estoy activa)
+git checkout nombreRama (Es para moverme a una rama distinta)
+git diff nombreRama1 nombreRama2 (Para ver las diferencias en las ramas)
+
+git merge rama-villanos (Para unir ramas - en este caso uni la rama master a la de villanos)
+(Siempre hay que estar posicionado en la rama en la que quiero unir algo)
+
+(FIN RAMAS)
 
 
 
