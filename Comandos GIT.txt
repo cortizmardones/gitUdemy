@@ -1,6 +1,4 @@
 
-
-
 (COMANDOS BÁSICOS)
 git --version (Saber la versión de Git)
 git -help (Ayuda en git)
@@ -105,8 +103,6 @@ propios commit (Cada rama conserva sus propios commit.) (Es el más común)
 
 Union manual o merge commit: Git no puede resolver y yo tengo que resolver manualmente.
 
-(El HEAD es el último commit en la rama en la que estamos - ojo con eso)
-
 git branch nombreNuevaRama (Crear una nueva rama)
 git checkout -b nombreRama (Crear una nueva rama y moverme a ella)
 
@@ -119,10 +115,21 @@ git merge rama-villanos (Para unir ramas - en este caso uni la rama master a la 
 (Siempre hay que estar posicionado en la rama en la que quiero unir algo)
 
 git branch -d nombreRama (Para eliminar las ramas - normalmente se hace despues de fusionarlas)
-
-
-
 (FIN RAMAS)
+
+
+
+
+(TAG)
+git tag nombreTag (Crear tag - comentario de commit , por ejemplo para verisonamiento)
+git tag -a v1.0.0 -m "Mensaje" (Crear tag con comentarios mejores)
+git tag -a v0.1.0 345d7de -m "Mensaje" (Crear tag en commit anteriores)
+
+git tag (Ver todos los tag creados)
+git show v1.0.0 (Ver tag especificos)
+
+git tag -d nombreTag 	(Borrar Tag)
+(FIN TAG)
 
 
 
