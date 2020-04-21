@@ -97,6 +97,7 @@ node_modules/ (Excluir carpetas)
 (RAMAS)
 Merge: Unir ramas
 fast-forward: No hubo cambios en el master y la rama secundaria se une sin problemas.
+(Se unio sin problemas ya que no existian ccommits en la rama a la cual unimos los cambios)
 
 Union automatica : Hubo cambios en el master y la rama secundaria se une pero agregando sus 
 propios commit (Cada rama conserva sus propios commit.) (Es el más común)
@@ -131,6 +132,14 @@ git show v1.0.0 (Ver tag especificos)
 git tag -d nombreTag 	(Borrar Tag)
 (FIN TAG)
 
+
+
+
+(GITHUB)
+git remote add origin https://github.com/blablabla (Agregar repositorio remoto a git local)
+(origin puiede ser cualquier nombre - por buenas practicas lo llamnan así)
+
+(FIN GITHUB)
 
 
 
