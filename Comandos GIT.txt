@@ -139,6 +139,9 @@ git tag -d nombreTag 	(Borrar Tag)
 git remote add origin https://github.com/blablabla (Agregar repositorio remoto a git local)
 (origin puiede ser cualquier nombre - por buenas practicas lo llamnan así)
 
+git remote -v (Para ver los repositorios remotos)
+git push -u origin master (-u significa especificar la rama que quieor subir : En este caso la MASTER / origin es la rama remota)
+
 (FIN GITHUB)
 
 
