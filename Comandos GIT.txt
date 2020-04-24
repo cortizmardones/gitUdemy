@@ -96,7 +96,7 @@ node_modules/ (Excluir carpetas)
 
 (RAMAS)
 Merge: Unir ramas
-fast-forward: No hubo cambios en el master y la rama secundaria se une sin problemas.
+fast-forward: No hubo cambios en el master y la rama secundaria con los cambios se une sin problemas.
 (Se unio sin problemas ya que no existian ccommits en la rama a la cual unimos los cambios)
 
 Union automatica : Hubo cambios en el master y la rama secundaria se une pero agregando sus 
@@ -108,6 +108,7 @@ git branch nombreNuevaRama (Crear una nueva rama)
 git checkout -b nombreRama (Crear una nueva rama y moverme a ella)
 
 git branch (Me muestra las ramas  - me marca en verde en la que estoy activa)
+git branch -a (Muestra las ramas incluso las ocultas (origin/master))
 git checkout nombreRama (Es para moverme a una rama distinta)
 
 git diff nombreRama1 nombreRama2 (Para ver las diferencias en las ramas)
@@ -130,6 +131,8 @@ git tag (Ver todos los tag creados)
 git show v1.0.0 (Ver tag especificos)
 
 git tag -d nombreTag 	(Borrar Tag)
+
+git push --tags (Para subir los tags a github ya que no los sube automaticamente)
 (FIN TAG)
 
 
@@ -140,7 +143,24 @@ git remote add origin https://github.com/blablabla (Agregar repositorio remoto a
 (origin puiede ser cualquier nombre - por buenas practicas lo llamnan así)
 
 git remote -v (Para ver los repositorios remotos)
-git push -u origin master (-u significa especificar la rama que quieor subir : En este caso la MASTER / origin es la rama remota)
+git push -u origin master (-u significa especificar la rama que quiero subir y dejarla definida para en el futuro solo hacer push solo: En este caso la MASTER / origin es la rama remota)
+
+git pull origin master (Para traer los cambios del servidor) Ojo que siempre intenta hacer un merge) Al usar git pull estas combinando git fetch+ git merge.
+
+git clone https://github.com/cortizmardones/gitUdemy.git (Clonar repositorios)
+https://github.com/cortizmardones/gitUdemy.git nombreProyecto (Clonar proyectos con nombre especificos en la carpeta de destino)
+
+git fetch (Es lo mismo que un pull solo que me trae los cambios y no realiza un merge del remoto con la rama master)
+
+
+
+
+
+Issues : Sirve para crear preguntas o hablar con los dueños de los repositorios.
+Pull Request: Forma para que personas que no tienen derecho a escribir en el repositorio me mandan partes codificadas de correcciones
+Projectos: Sirve para crear flujos de trabajo
+Wiki: Documentación o información del repositorio. 
+
 
 (FIN GITHUB)
 
