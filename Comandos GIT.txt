@@ -17,6 +17,7 @@ git config --global -l (Aparece la info anterior sin opcion de editar)
 
 git remote rm origin (Eliminar el repositorio remoto)
 git remote add origin https://githuub/bla/bla/bla.git (Agregar un nuevo repo remoto)
+git config core.autocrlf true (SOLUCIÓN CRLF)
 (FIN CONFIGURACIONES GLOBALES)
 
 
@@ -137,6 +138,14 @@ git push --tags (Para subir los tags a github ya que no los sube automaticamente
 
 
 
+(STASH/REBASE)
+git stash (Guarda en memoria el proyecto en ese momento Y ME LLEVA AL ULTIMO COMMIT (los cambios que pude haber hecho desde el último commit quedan en memoria)
+git stash list (Muestra todos los stash que hay en el proyecto)
+git stash pop (Traer los cambios del ultimo stash los aplica al proyecto y finalmente destruye el stash)
+(FIN STASH/REBASE)
+
+
+
 
 (GITHUB)
 git remote add origin https://github.com/blablabla (Agregar repositorio remoto a git local)
@@ -145,7 +154,7 @@ git remote add origin https://github.com/blablabla (Agregar repositorio remoto a
 git remote -v (Para ver los repositorios remotos)
 git push -u origin master (-u significa especificar la rama que quiero subir y dejarla definida para en el futuro solo hacer push solo: En este caso la MASTER / origin es la rama remota)
 
-git pull origin master (Para traer los cambios del servidor) Ojo que siempre intenta hacer un merge) Al usar git pull estas combinando git fetch+ git merge.
+git pull origin master (Para traer los cambios del servidor) Ojo que siempre intenta hacer un merge) Al usar git pull estas combinando git fetch + git merge.
 
 git clone https://github.com/cortizmardones/gitUdemy.git (Clonar repositorios)
 https://github.com/cortizmardones/gitUdemy.git nombreProyecto (Clonar proyectos con nombre especificos en la carpeta de destino)
@@ -153,15 +162,10 @@ https://github.com/cortizmardones/gitUdemy.git nombreProyecto (Clonar proyectos 
 git fetch (Es lo mismo que un pull solo que me trae los cambios y no realiza un merge del remoto con la rama master)
 
 
-
-
-
 Issues : Sirve para crear preguntas o hablar con los dueños de los repositorios.
 Pull Request: Forma para que personas que no tienen derecho a escribir en el repositorio me mandan partes codificadas de correcciones
 Projectos: Sirve para crear flujos de trabajo
 Wiki: Documentación o información del repositorio. 
-
-
 (FIN GITHUB)
 
 
@@ -192,23 +196,6 @@ Wiki: Documentación o información del repositorio.
 
 
 
-
-
-
-
-
-
-
-
-	CURSO NORMALIZADO (AYUDA MEMORIA)
-git init
-git add .
-git commit -m "snapshot01"
-git remote add origin https://github.com/BlaBlaBla
-git push -u origin master
-
-	SOLUCIÓN CRLF
-git config core.autocrlf true
 
 
 
