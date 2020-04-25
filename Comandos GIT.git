@@ -45,35 +45,6 @@ git commit -am "mensaje" (Para agregar al stage y commitear a la vez)
 
 
 
-(VARIOS)
-git log (Ver el historial de COMMIT que he realizado)
-git log --oneline (Ver ek historial de COMMIT que he realizado en una sola linea)
-git log --oneline --decorate --all --graph (historial de commit con mejoras gráficas)
-
-(Crear Alias - Ejemplos)
-git config --global alias.lg "log --oneline --decorate --all --graph"
-git lg (Llamando al Alias , va a ejecutar todas las propiedades anteriores que estan delimitadas en "" en el comando anterior)
-
-git config --global alias.s "status -s -b"
-git s
-
-(Me lleva al último commit) SALVAVIDA
-git checkout -- .
-git checkout -- ARCHIVO.PNG (Restaura solo un archivo)
-
-(Ver los cambios que hice cuando vuelvo de almorzar y no se que modifique y no he hecho commit)
-git diff
-git diff --staged
-
-git commit --amend -m "PARA CAMBIAR EL COMENTARIO DEL ULTIMO COMMIT SI ME EQUIVOQUE"
-
-git mv nombreAntiguo.txt nombreNuevo.txt (Cambiar nombres de los archivos)
-git rm nombreArchivo.txt (Eliminar archivos del stage)
-(FIN VARIOS)
-
-
-
-
 (VIAJAR EN EL TIEMPO)
 git reset --soft 860c6c2 (conserva archivos - solo tendria que agregarlos de nuevo al staging y commitear) 
 git reset --hard 860c6c2 (Destruye los archivos- ojo con este)
@@ -138,10 +109,26 @@ git push --tags (Para subir los tags a github ya que no los sube automaticamente
 
 
 
+
 (STASH/REBASE)
-git stash (Guarda en memoria el proyecto en ese momento Y ME LLEVA AL ULTIMO COMMIT (los cambios que pude haber hecho desde el último commit quedan en memoria)
+git stash (Guarda en memoria el proyecto en ese momento Y ME LLEVA AL ULTIMO COMMIT)
+git stash save (Exactamente lo mismo que arriba)
+git stash save "Mensaje para el stash" (Guarda en memoria el proyecto en ese momento Y ME LLEVA AL ULTIMO COMMIT pero deja un mensaje)
+git stash save --keep-index (Guarda todo menos los archivos que estan en el stage)
+git stash save --include- (Guarda todo incluso los archivos que git no les da seguimiento)
+
 git stash list (Muestra todos los stash que hay en el proyecto)
-git stash pop (Traer los cambios del ultimo stash los aplica al proyecto y finalmente destruye el stash)
+git stash list --stat (Muestra todos los stah que hay en el proyecto con más detalles)
+git show stash (Muestra todos los stah que hay en el proyecto incluso con más detalles)
+git show stash@{0} (Muestra la información de stash especificos)
+
+git stash pop (Traer los cambios del ultimo stash (Guardados en memoria) los aplica al proyecto y finalmente destruye el stash)
+git stash apply (Traer los cambios del ultimo stash los aplica al proyecto y NO destruye el stash)
+git stash apply stash@{1} (Trae los cambios del stash que yo especifique)
+
+git stash drop (Elimina el ultimo stash creado , la posicion stash@{0})
+git stash drop stash@{1} (Elimina un stash especifico)
+git stash clear (Borra todos los stash - es el más destructivo de todos)
 (FIN STASH/REBASE)
 
 
@@ -157,7 +144,7 @@ git push -u origin master (-u significa especificar la rama que quiero subir y d
 git pull origin master (Para traer los cambios del servidor) Ojo que siempre intenta hacer un merge) Al usar git pull estas combinando git fetch + git merge.
 
 git clone https://github.com/cortizmardones/gitUdemy.git (Clonar repositorios)
-https://github.com/cortizmardones/gitUdemy.git nombreProyecto (Clonar proyectos con nombre especificos en la carpeta de destino)
+git clone https://github.com/cortizmardones/gitUdemy.git nombreProyecto (Clonar proyectos con nombre especificos en la carpeta de destino)
 
 git fetch (Es lo mismo que un pull solo que me trae los cambios y no realiza un merge del remoto con la rama master)
 
@@ -174,6 +161,54 @@ Wiki: Documentación o información del repositorio.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(VARIOS)
+git log (Ver el historial de COMMIT que he realizado)
+git log --oneline (Ver ek historial de COMMIT que he realizado en una sola linea)
+git log --oneline --decorate --all --graph (historial de commit con mejoras gráficas)
+
+(Crear Alias - Ejemplos)
+git config --global alias.lg "log --oneline --decorate --all --graph"
+git lg (Llamando al Alias , va a ejecutar todas las propiedades anteriores que estan delimitadas en "" en el comando anterior)
+
+git config --global alias.s "status -s -b"
+git s
+
+(Me lleva al último commit) SALVAVIDA
+git checkout -- .
+git checkout -- ARCHIVO.PNG (Restaura solo un archivo)
+
+(Ver los cambios que hice cuando vuelvo de almorzar y no se que modifique y no he hecho commit)
+git diff
+git diff --staged
+
+git commit --amend -m "PARA CAMBIAR EL COMENTARIO DEL ULTIMO COMMIT SI ME EQUIVOQUE"
+
+git mv nombreAntiguo.txt nombreNuevo.txt (Cambiar nombres de los archivos)
+git rm nombreArchivo.txt (Eliminar archivos del stage)
+(FIN VARIOS)
 
 
 
