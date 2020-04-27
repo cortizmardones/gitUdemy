@@ -40,6 +40,7 @@ git reset . (Elimina todo)
 
 git commit -m "Comentario" (Se crea el snapshot del código y se agrega un comentario)
 git commit -am "mensaje" (Para agregar al stage y commitear a la vez)
+git commit --amend -m "PARA CAMBIAR EL COMENTARIO DEL ULTIMO COMMIT SI ME EQUIVOQUE"
 (FIN PROCESO NORMAL GIT)
 
 
@@ -158,32 +159,6 @@ Wiki: Documentación o información del repositorio.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 (VARIOS)
 git log (Ver el historial de COMMIT que he realizado)
 git log --oneline (Ver ek historial de COMMIT que he realizado en una sola linea)
@@ -204,7 +179,7 @@ git checkout -- ARCHIVO.PNG (Restaura solo un archivo)
 git diff
 git diff --staged
 
-git commit --amend -m "PARA CAMBIAR EL COMENTARIO DEL ULTIMO COMMIT SI ME EQUIVOQUE"
+
 
 git mv nombreAntiguo.txt nombreNuevo.txt (Cambiar nombres de los archivos)
 git rm nombreArchivo.txt (Eliminar archivos del stage)
